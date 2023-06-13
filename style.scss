@@ -1,0 +1,116 @@
+/* $primary: #2ECC71;
+$secondary: #ABEBC6 ; */
+$border-radius-pill: 3rem;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" );
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+section{
+    padding: 60px 0;
+}
+
+
+.banner{
+    background: url("./assets/fondo_plantilla.jpg") no-repeat;
+    background-size: cover;
+    background-position: top left;    
+}
+
+.banner-content > h1{
+    font-size: 70px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.banner-content > h2{
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.btn-primary{
+    color: white;
+    font-weight: bolder;
+}
+
+.author-img{
+    position: relative;
+    z-index: 1;
+}
+
+.author-img:before{
+    position: absolute;
+    content: "";
+    left: -20px;
+    top: 20px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid $primary;
+    z-index: -1;
+    
+}
+
+
+/* Media Queries */
+
+@include media-break-poing-only(xs){
+    .banner-content > h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .banner-content > h2{
+        font-size: 25px;
+    }
+}
+
+@include media-break-poing-only(xs){
+    .banner-content > h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .banner-content > h2{
+        font-size: 25px;
+    }
+}
+
+@include media-break-poing-only(sm){
+    .banner-content > h1{
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .banner-content > h2{
+        font-size: 30px;
+    }
+}
+
+@include media-break-poing-only(md){
+    .banner-content > h1{
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+}
+
+@include media-break-poing-only(lg){
+    .banner-content > h1{
+        font-size: 60px;
+        line-height: 85px;
+    }
+
+    .banner-content > h2{
+        font-size: 30px;
+    }
+}
