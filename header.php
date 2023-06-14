@@ -33,25 +33,8 @@
 
 
         </div>
-        <!--         <form class="d-flex me-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-warning fs-3" type="submit">Search</button>
-        </form> -->
-        <!--         <div class="header_container2 justify-content-end" id="navbar">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fs-4 me-5" style="font-family: 'Montserrat', sans-serif; color:#FFC107; text-shadow:#FFC107 solid 10px 10px 10px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Opciones
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="perfil.php">Perfil</a></li>
-                        <li><a class="dropdown-item" href="#">Fichas</a></li>
-                        <li><a class="dropdown-item" href="temas.php">Temas</a></li>
-                    </ul>
-                </li>
-            </ul> -->
         <form action="cerrar_sesion.php" class="pe-3">
-            <input class="btn btn-outline-warning fs-4 rounded" type="submit" name="cerrar_sesion" value="Cerrar Sesion">
+            <input class="btn btn-outline-warning fs-4 rounded" type="submit" name="cerrar_sesion" value="Cerrar Sesión">
         </form>
         </div>
 

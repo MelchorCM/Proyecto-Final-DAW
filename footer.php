@@ -56,8 +56,7 @@
             <i class="fas fa-gem me-3 text-secondary"></i>Reptil Room
           </h6>
           <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+            Aquí pretendemos crear un ambiente cómodo en el que te sentirás acogido y con gente con la que compartas afición.
           </p>
         </div>
         <!-- Grid column -->
@@ -94,13 +93,12 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p>C/Venezuela n10</p>
           <p>
-            <i class="fas fa-envelope me-3 text-secondary"></i>
-            info@example.com
+    
+            info@reptilroom.com
           </p>
-          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          <p> + 01 234 567 88</p>
         </div>
         <!-- Grid column -->
       </div>
@@ -112,7 +110,7 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
     © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-reset fw-bold">reptilroom.com</a>
   </div>
   <!-- Copyright -->
 </footer>
