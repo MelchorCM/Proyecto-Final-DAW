@@ -13,17 +13,17 @@
 <body>
     <nav class="navbar navbar-expand-lg p-1 " style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .9)), url('./assets/piel_3.jpg');">
         <div class="container-fluid header_container1">
-            <a class="navbar-brand-md" href="index.php"> <img id="plantilla-logo" src="assets/logo4 (2).png" alt="" class="float-end rounded"> </a>
+            <a class="navbar-brand-md" href="index.php"> <img id="plantilla-logo" src="assets/logo4 (2).png" alt="" class="float-end rounded"></a>
             <button class="navbar-toggler" type="button" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar justify-content-end" id="navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link fs-4 me-5" style="font-family: 'Montserrat', sans-serif; color:#FFC107; text-shadow:#FFC107 solid 10px 10px 10px;" aria-current="page" href="perfil.php">Perfil</a>
+                        <a class="nav-link text-warning  fs-4 me-5" style="font-family: 'Montserrat', sans-serif;" href="index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning  fs-4 me-5" style="font-family: 'Montserrat', sans-serif;">Fichas</a>
+                        <a class="nav-link fs-4 me-5" style="font-family: 'Montserrat', sans-serif; color:#FFC107; text-shadow:#FFC107 solid 10px 10px 10px;" aria-current="page" href="perfil.php">Perfil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-warning  fs-4 me-5" style="font-family: 'Montserrat', sans-serif;" href="temas.php">Temas</a>
@@ -37,7 +37,7 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-warning fs-3" type="submit">Search</button>
         </form> -->
-<!--         <div class="header_container2 justify-content-end" id="navbar">
+        <!--         <div class="header_container2 justify-content-end" id="navbar">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle fs-4 me-5" style="font-family: 'Montserrat', sans-serif; color:#FFC107; text-shadow:#FFC107 solid 10px 10px 10px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,7 +50,7 @@
                     </ul>
                 </li>
             </ul> -->
-            <form action="cerrar_sesion.php" class="pe-3">
+        <form action="cerrar_sesion.php" class="pe-3">
             <input class="btn btn-outline-warning fs-4 rounded" type="submit" name="cerrar_sesion" value="Cerrar Sesion">
         </form>
         </div>
@@ -82,10 +82,10 @@
             justify-content: start;
             width: 100%;
         }
-        .navbar-brand-md{
+
+        .navbar-brand-md {
             display: flex;
             justify-content: center;
         }
     }
-
 </style>

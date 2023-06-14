@@ -19,7 +19,7 @@
     }
     include('header.php');
 
-    $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+    $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
     if (isset($_REQUEST['id_usuario_visitado'])) {
         $id_usuario_visitado = $_REQUEST['id_usuario_visitado'];
         $usuario = $conexion->query("SELECT * FROM usuarios WHERE id='$id_usuario_visitado'");

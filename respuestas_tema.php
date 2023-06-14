@@ -20,7 +20,7 @@
   }
 
   $usuario = $_SESSION['usuario'];
-  $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+  $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
   $id_tema = $_GET['id_tema'];
 
 

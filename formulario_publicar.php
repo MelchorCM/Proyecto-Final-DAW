@@ -26,7 +26,7 @@
     if (!isset($_SESSION['usuario'])) {
         header('Location: iniciar_sesion.php');
     }
-    $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+    $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
     $id_usuario_visitado = $_SESSION['usuario'];
     $usuario = $conexion->query("SELECT * FROM usuarios WHERE id='$id_usuario_visitado'");
     $usuario = $usuario->fetch_object();
@@ -35,7 +35,13 @@
     <div class="container cabecera_perfil rounded-pill mt-4 mb-4" style="background-color: #32c19d;">
         <div class="row text-light text-center p-5">
             <div class="col-md-7">
-                <img src="./assets/natos1.jpg" alt="Imagen de perfil" class="profile-image">
+                <?php
+                                    if (empty($usuario->imagen_perfil)) {
+                                        echo "<img src='./imagenes_perfil/contacto.png' alt='Imagen de perfil' class='profile-image'>";
+                                    } else {
+                                        echo "<img src='./imagenes_perfil/$usuario->imagen_perfil' alt='Imagen de perfil' class='profile-image'>";
+                                    }
+                                    ?>
                 <h2 class="card-title mt-4 mb-4 fs-3"><?php echo strtoupper("$usuario->usuario") ?> </h2>
                 <a href="formulario_publicar.php" class="btn btn-outline-light fs-2">Subir publicacion</a>
             </div>

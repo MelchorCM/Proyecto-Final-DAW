@@ -23,7 +23,7 @@
             $titulo = $_REQUEST['titulo'];
             $descripcion = $_REQUEST['descripcion'];
             $categoria = $_REQUEST['categoria'];
-            $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+            $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
             $maxid = $conexion->query("SELECT MAX(id) as maximo from temas");
             $fetchID = $maxid->fetch_object();
             $id = $fetchID->maximo;

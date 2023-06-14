@@ -22,7 +22,7 @@ if (isset($_REQUEST['user']) || isset($_REQUEST['pass'])) {
     // Genera el hash de la contraseña utilizando Argon2
     $hash = password_hash($contrasena, PASSWORD_DEFAULT);
 
-    $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+    $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
     $maxid = $conexion->query("SELECT MAX(id) as maximo from usuarios");
     $fetchID = $maxid->fetch_object();
     $id = $fetchID->maximo;

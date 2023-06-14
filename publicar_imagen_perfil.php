@@ -18,7 +18,7 @@
         header('Location: iniciar_sesion.php');
     }
     $usuario_id = $_SESSION['usuario'];
-    $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+    $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
     $usuario = $conexion->query("SELECT * FROM usuarios WHERE id='$usuario_id'");
     $usuario = $usuario->fetch_object();
     $imagen_perfil_antigua =  $usuario->imagen_perfil;

@@ -1,6 +1,6 @@
 <?php
 // Crear una conexión a la base de datos
-$conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+$conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
 
 // Obtener los valores enviados por AJAX
 if(isset($_POST['titulo'])){

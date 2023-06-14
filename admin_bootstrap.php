@@ -17,7 +17,7 @@ if (!isset($_SESSION['usuario'])){
 die("Error - debe identificarse.");
 }
 $usuario_id = $_SESSION['usuario'];
-$conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+$conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
 $consulta = "SELECT * FROM usuarios WHERE id = '$usuario_id'";
 $resultado = $conexion->query($consulta);
 $usuario = $resultado->fetch_object();
@@ -56,7 +56,7 @@ die("Esta no es la página para usuarios");
                 </thead>
                 <tbody>
                     <?php
-                    $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+                    $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
                     if (isset($_REQUEST['categoria']) && ($_REQUEST['categoria'] !== '')) {
                         $filtro = $_REQUEST['categoria'];
                         $resultado = $conexion->query("SELECT * FROM temas WHERE categoria='$filtro'");
@@ -99,7 +99,7 @@ die("Esta no es la página para usuarios");
                     <label for="categoria" class="form-label">Categoría:</label>
                     <select name="categoria" class="form-select mb-3">
                         <?php
-                        $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+                        $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
                         $resultado = $conexion->query("SELECT DISTINCT categoria FROM temas");
                         $categoria = $resultado->fetch_object();
                         while ($categoria != null) {
@@ -130,7 +130,7 @@ die("Esta no es la página para usuarios");
             </thead>
             <tbody>
                 <?php
-                $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+                $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
                 $resultado = $conexion->query("SELECT * FROM usuarios");
                 $usuario = $resultado->fetch_object();
                 while ($usuario != null) {
@@ -167,7 +167,7 @@ die("Esta no es la página para usuarios");
             // Genera el hash de la contrasena utilizando Argon2
         /*     $hash = password_hash($contrasena, PASSWORD_ARGON2I);
          */
-            $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+            $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
             $maxid = $conexion->query("SELECT MAX(id) as maximo from usuarios");
             $fetchID = $maxid->fetch_object();
             $id = $fetchID->maximo;

@@ -20,7 +20,7 @@
         $nuevaBiografia = $_POST['biografia'];
 
         // Crear una conexión a la base de datos
-        $conexion = new mysqli('localhost', 'root', '', 'fororeptil');
+        $conexion = new mysqli('localhost', 'administrador', 'usuario', 'fororeptil');
 
         // Verificar si hay errores en la conexión
         if ($conexion->connect_error) {
